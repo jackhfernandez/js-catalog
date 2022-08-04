@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Filter And Search</title>
+    <title>Js Catalog</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <div id="search-container">
+    <div class="container">
+      <div id="search-container" class="search-container">
         <input
           type="search"
           id="search-input"
@@ -16,22 +16,24 @@
         />
         <button id="search">Search</button>
       </div>
-      <div id="buttons">
-        <button class="button-value" onclick="filterProduct('all')">All</button>
-        <button class="button-value" onclick="filterProduct('Topwear')">
+      <div id="filter-container">
+        <button class="filter-button" onclick="filterProduct('all')">
+          All
+        </button>
+        <button class="filter-button" onclick="filterProduct('Topwear')">
           Topwear
         </button>
-        <button class="button-value" onclick="filterProduct('Bottomwear')">
+        <button class="filter-button" onclick="filterProduct('Bottomwear')">
           Bottomwear
         </button>
-        <button class="button-value" onclick="filterProduct('Jacket')">
+        <button class="filter-button" onclick="filterProduct('Jacket')">
           Jacket
         </button>
-        <button class="button-value" onclick="filterProduct('Watch')">
+        <button class="filter-button" onclick="filterProduct('Watch')">
           Watch
         </button>
       </div>
-      <div id="products"></div>
+      <div id="catalog"></div>
     </div>
     <script src="index.js"></script>
   </body>

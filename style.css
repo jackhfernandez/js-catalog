@@ -7,10 +7,19 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #f5f8ff;
+  background-color: #98c1d9;
 }
-.wrapper {
-  width: 95%;
+hr {
+  display: block;
+  margin-top: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3d5a80;
+  border-style: solid;
+  border-width: 1px;
+}
+.container {
+  width: 90%;
   margin: 0 auto;
 }
 #search-container {
@@ -19,40 +28,48 @@ body {
 #search-container input {
   background-color: transparent;
   width: 40%;
-  border-bottom: 2px solid #110f29;
+  border-bottom: 2px solid #293241;
   padding: 1em 0.3em;
 }
 #search-container input:focus {
-  border-bottom-color: #6759ff;
+  border-bottom-color: #3d5a80;
 }
-#search-container button {
+.search-container button {
   padding: 1em 2em;
   margin-left: 1em;
-  background-color: #6759ff;
+  background-color: #3d5a80;
   color: #ffffff;
   border-radius: 5px;
   margin-top: 0.5em;
 }
-.button-value {
-  border: 2px solid #6759ff;
+.filter-button {
+  border: 2px solid #3d5a80;
   padding: 1em 2.2em;
-  border-radius: 3em;
+  border-radius: 1em;
   background-color: transparent;
-  color: #6759ff;
+  color: #3d5a80;
+  cursor: pointer;
+}
+.catalog-button {
+  padding: 0.8em 1.1em;
+  margin: 1em;
+  border-radius: 3em;
+  background-color: #293241;
+  color: #ffffff;
   cursor: pointer;
 }
 .active {
-  background-color: #6759ff;
+  background-color: #3d5a80;
   color: #ffffff;
 }
-#products {
+#catalog {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 1.5em;
+  grid-column-gap: 1em;
   padding: 2em 0;
 }
 .card {
-  background-color: #ffffff;
+  background-color: #ddeaed;
   max-width: 18em;
   margin-top: 1em;
   padding: 1em;
@@ -87,8 +104,8 @@ img {
     max-width: 10em;
     margin-top: 1em;
   }
-  #products {
+  #catalog {
     grid-template-columns: auto auto;
-    grid-column-gap: 1em;
+    grid-column-gap: 3em;
   }
 }
