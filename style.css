@@ -18,9 +18,38 @@ hr {
   border-style: solid;
   border-width: 1px;
 }
+.column {
+  float: left;
+}
+
+.left {
+  width: 75%;
+}
+
+.right {
+  position: sticky;
+  top: 0;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .container {
   width: 90%;
   margin: 0 auto;
+}
+div.cart {
+  width: 95%;
+  height: 400px;
+  border-radius: 1em;
+  color: #FFF;
+  text-align: center;
+  background: #3d5a80;
+  padding: 50px;
+  font-size: 20px;
+  line-height: 1.8em;
 }
 #search-container {
   margin: 1em 0;
