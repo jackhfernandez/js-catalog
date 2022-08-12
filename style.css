@@ -23,13 +23,13 @@ hr {
 }
 
 .left {
-  width: 75%;
+  width: 80%;
 }
 
 .right {
   position: sticky;
   top: 0;
-  width: 25%;
+  width: 20%;
 }
 .row:after {
   content: "";
@@ -41,6 +41,7 @@ hr {
   margin: 0 auto;
 }
 div.cart {
+  max-width: 400px;
   width: 95%;
   height: 400px;
   border-radius: 1em;
@@ -49,7 +50,6 @@ div.cart {
   background: #3d5a80;
   padding: 50px;
   font-size: 20px;
-  line-height: 1.8em;
 }
 #search-container {
   margin: 1em 0;
@@ -101,7 +101,7 @@ div.cart {
 }
 #catalog {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-column-gap: 1em;
   padding: 2em 0;
 }
@@ -131,18 +131,23 @@ img {
 .hide {
   display: none;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1180px) {
   img {
     max-width: 100%;
     object-fit: contain;
     height: 10em;
   }
   .card {
-    max-width: 10em;
+    max-width: 14em;
     margin-top: 1em;
   }
   #catalog {
-    grid-template-columns: auto auto;
-    grid-column-gap: 3em;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+  }
+  #catalog input{
+    margin-top: 1em;
+    margin-left: 0.8em;
+    width: 60%;
   }
 }
