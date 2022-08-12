@@ -104,7 +104,7 @@ let catalog = {
 
     //buy
     let buying = document.createElement("button");
-    buying.innerText = "Buy".toUpperCase();
+    buying.innerText = "Comprar".toUpperCase();
     buying.classList.add("catalog-button");    
     container.appendChild(buying);
 
