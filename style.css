@@ -51,12 +51,20 @@ hr {
   cursor: pointer;
 }
 .catalog-button {
-  padding: 0.8em 1.1em;
-  margin: 1em;
+  padding: 0.6em 1em;
+  margin: 0.6em;
   border-radius: 3em;
   background-color: #3d5a80;
   color: #ffffff;
   cursor: pointer;
+}
+#catalog input {
+  padding: 0.6em 1em;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5em;
+  background-color: #5cc5f6;
+  width: 30%;
 }
 .active {
   background-color: #3d5a80;
