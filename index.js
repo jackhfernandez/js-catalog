@@ -208,15 +208,6 @@ document.getElementById("search").addEventListener("click", () => {
   });
 });
 
-//Modifying numbers
-// function modifyInventory(value) {
-
-// }
-
-// document.getElementById("buy").addEventListener("submit", () => {
-
-// });
-
 //Initially display all products
 window.onload = () => {
   filterProduct("all");
