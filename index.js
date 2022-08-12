@@ -5,7 +5,7 @@ let catalog = {
       category: "Filtro1",
       price: "30",
       image: "./img/ubits.png",
-      inventory: 3,
+      inventory: 14,
     },
     {
       productName: "Producto 4",
@@ -19,7 +19,7 @@ let catalog = {
       category: "Filtro4",
       price: "99",
       image: "./img/ubits.png",
-      inventory: 3,
+      inventory: 2,
     },
     {
       productName: "Producto C",
@@ -40,7 +40,7 @@ let catalog = {
       category: "Filtro2",
       price: "89",
       image: "./img/ubits.png",
-      inventory: 3,
+      inventory: 1,
     },
     {
       productName: "Producto 56",
@@ -75,7 +75,7 @@ let catalog = {
       category: "Filtro3",
       price: "189",
       image: "./img/ubits.png",
-      inventory: 3,
+      inventory: 9,
     },
     {
       productName: "Producto F",
@@ -89,7 +89,7 @@ let catalog = {
       category: "Filtro2",
       price: "49",
       image: "./img/ubits.png",
-      inventory: 3,
+      inventory: 123,
     },
     {
       productName: "Producto H",
@@ -103,7 +103,7 @@ let catalog = {
       category: "Filtro1",
       price: "29",
       image: "./img/ubits.png",
-      inventory: 3,
+      inventory: 30,
     },
   ],
 };
@@ -145,6 +145,7 @@ for (let i of catalog.data) {
   let order = document.createElement("input");
   order.setAttribute("type", "number");
   order.setAttribute("min", "1");
+  order.setAttribute("max", i.inventory);
   order.value = "1";
   container.appendChild(order);
 
