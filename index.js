@@ -95,6 +95,7 @@ for (let i of catalog.data) {
   //order and editing invetory
   let order = document.createElement("input");
   order.setAttribute("type", "number");
+  order.setAttribute("min", "1");
   order.value = "1";
   container.appendChild(order);
 
