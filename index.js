@@ -151,6 +151,7 @@ for (let i of catalog.data) {
 
   //buy
   let buying = document.createElement("button");
+  order.setAttribute("type", "submit");
   buying.innerText = "Comprar".toUpperCase();
   buying.classList.add("catalog-button");
   container.appendChild(buying);
@@ -207,6 +208,7 @@ document.getElementById("search").addEventListener("click", () => {
     }
   });
 });
+
 
 //Initially display all products
 window.onload = () => {
